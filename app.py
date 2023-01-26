@@ -11,33 +11,6 @@ CORS(app, resources={
     r"/*":{'origins':'*'}
 })
 
-BOOKS = [
-    {
-      "name": "A Song of Ice and Fire",
-      "rating": "5",
-      "author": "George R.R Martin",
-      "id": 1
-    },
-    {
-      "name": "The Alchemist",
-      "rating": "4.4",
-      "author": "Paulo Coelho",
-      "id": 2
-    },
-    {
-      "name": "The Subtle Art of Not Giving a Fuck",
-      "rating": "5",
-      "author": "Mark Manson",
-      "id": 3
-    },
-    {
-      "name": "And Then There Were None",
-      "rating": "4.7",
-      "author": "Agatha Christie",
-      "id": 4
-    }
-  ]
-
 def mdb(collec_name):
     cluster = MongoClient(os.environ["MONGO_API"])
     db = cluster["e-book"]
