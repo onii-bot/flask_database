@@ -1,0 +1,4 @@
+Flask==2.2.2
+gunicorn==20.1.0
+Flask-Cors==3.0.10
+pymongo[tls,srv]==4.2.0
